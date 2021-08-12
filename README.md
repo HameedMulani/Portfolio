@@ -1,4 +1,4 @@
 ## Portfolio
-Personal Portfolio website created by Me.
-live here: hameedmulani.github.io/portfolio
-
+Personal Portfolio website created by Me. <br>
+live website: 
+https://hameedmulani.github.io/Portfolio/
