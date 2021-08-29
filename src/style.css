@@ -36,7 +36,7 @@ nav{
 ul{
     display: flex;
     list-style-type: none;
-    width: 500px;
+    width: 700px;
     font-size: 30px;
     justify-content: space-around;
 }
@@ -62,6 +62,7 @@ p{
 .information p{
     margin-top: 0;
     font-size: 20px;
+    margin-right: 80px;
 }
 
 .subtext{
@@ -151,9 +152,10 @@ p{
 }
 .project-card{
     width: 250px;
-    height: 450px;
+    height: 460px;
     box-shadow: 5px 5px 20px rgb(168, 168, 168);
     margin: 10px;
+    margin-bottom: 20px;
     border-radius: 5px;
 
 }
@@ -168,7 +170,7 @@ p{
     justify-content: space-around;
 }
 
-@media only screen and (max-width: 970px){
+/* @media only screen and (max-width: 970px){
     .project-container{
         display: flex;
         flex-wrap: wrap;
@@ -187,7 +189,7 @@ p{
         flex-wrap: wrap;
     }
 
-}
+} */
 @media only screen and (max-width: 600px){
     footer p{
         font-size: 15px;
@@ -226,6 +228,24 @@ a{
 }
 
 @media only screen and (max-width: 970px) {
+
+    .project-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sub-section{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        margin-top: 80px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
     
     .hamburger{
         display: block;
