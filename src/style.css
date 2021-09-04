@@ -56,13 +56,13 @@ h1{
 .hero-para{
     font-size: 0.7em;
     background-image: linear-gradient(170deg,#1c1d25, white);
-    background-size: 0% 2.5px;
+    background-size: 0% 2.9px;
     background-repeat: no-repeat;
     background-position: left bottom;
     transition: background-size 300ms ease;
 }
 .hero-para:hover{
-    background-size: 100% 2.5px;
+    background-size: 100% 2.9px;
 }
 
 h2{
