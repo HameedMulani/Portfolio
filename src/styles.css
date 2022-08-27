@@ -1,6 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    /* cursor: url("../abc.png"), auto; */
 }
 
 section {
@@ -29,24 +33,40 @@ nav {
 ul {
     display: flex;
     list-style-type: none;
-    width: 500px;
+    width: 650px;
     justify-content: space-around;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 li {
     text-decoration: none;
 }
 
+li:hover a{
+    color: coral;
+    font-size: 26px;
+    transition: ease-in-out 100ms;
+}
+
 h1 {
-    font-size: 90px;
+    font-size: 75px;
     margin: 0;
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 45px;
 }
-
+.hero-para{
+    font-size: 0.7em;
+    background-image: linear-gradient(170deg,#1c1d25, white);
+    background-size: 0% 2.9px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 300ms ease;
+}
+.hero-para:hover{
+    background-size: 100% 2.9px;
+}
 p {
     margin: 0;
     font-size: 30px;
@@ -71,19 +91,20 @@ p {
 }
 
 .button {
-    width: 200px;
-    height: 55px;
-    border-radius: 30px;
+    width: 160px;
+    height: 45px;
+    border-radius: 50px;
     background-color: coral;
     text-align: center;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 300;
-    padding-top: 5px;
+    padding-top: 4px;
     margin-top: 20px;
 }
 
 .button:hover {
-    background-color: #ef744b;
+    background-color: black;
+   
 }
 
 .button:active {
@@ -96,19 +117,35 @@ p {
 }
 
 .logo {
-    height: 80px;
+    height: 60px;
     margin: 30px;
 }
 .social {
     margin: 20px;
 }
+.social a:hover{
+    width: 55;
+}
+
+.information p{
+    margin-top: 0;
+    font-size: 20px;
+    margin-right: 80px;
+}
 
 .sub-section {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 80px;
+    margin-left: 60px;
+    margin-right: 60px;
+    box-shadow: 5px 5px 20px rgb(168, 168, 168);
+    margin-top: 80px;
+    margin-bottom: 15px;
 }
-
+.information h2{
+    margin-top: 0;
+}
 .sub-section-alternative {
     display: flex;
     flex-direction: column;
@@ -131,9 +168,15 @@ p {
     width: 300px;
     height: 500px;
     box-shadow: 5px 5px 20px rgb(197, 195, 195);
-    margin: 10px;
+    margin: 10px; 
+    transition: ease 500ms;
 }
-
+.project-card:hover{
+    width: 304x;
+    box-shadow: 5px 5px 20px rgb(43, 2, 2);
+    margin: 10px;
+    transition: ease 10ms;
+}
 .project-container {
     display: flex;
     justify-content: space-around;
@@ -199,11 +242,51 @@ a {
 
     nav {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: row;
         background-color: #2b2c38;
     }
+    .hamburger{
+        margin-bottom: 30px;
 
+    }
     .logo {
-        display: none;
+        max-width: 1.5em;
+        max-height: 1.2em;
     }
 }
+@media only screen and (max-width: 425px){
+    .sub-section{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 80px;
+        margin-left: 60px;
+        margin-right: 60px;
+        box-shadow: 5px 5px 20px rgb(168 168 168);
+        margin-top: 80px;
+        margin-bottom: 15px;
+    }
+    .headshot-container{
+        min-height: 500px;
+        min-width: 400px;
+        justify-content: center;
+        display: flex;
+    }
+    .information p{
+        margin-top: 0;
+        font-size: 20px;
+        margin-right: 80px;
+    }
+    .hamburger{
+        position: absolute;
+        top: 0.02em;
+    }
+    .sub-section-alternative{
+        margin: 80px 50px;
+    }
+    .project-card h3{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+    
